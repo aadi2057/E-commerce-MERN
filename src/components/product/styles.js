@@ -7,10 +7,12 @@ export default makeStyles(() => ({
   media: {
     height: 0,
     paddingTop: "56.25%",
+    // objectFit: "contain",
   },
   cardContent: {
     display: "flex",
     justifyContent: "space-between",
+    textAlign: "left",
   },
   cardActions: {
     display: "flex",
@@ -18,6 +20,12 @@ export default makeStyles(() => ({
   },
   cardDescription: {
     display: "flex",
-    justifyContent: "flex-start",
+    justifyContent: "left",
+    textAlign: "left",
+    // textOverflow: "ellipsis",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
+    // wordBreak: "break-all",
+    textOverflow: "ellipsis",
   },
 }));
