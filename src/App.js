@@ -85,7 +85,11 @@ function App(props) {
             />
           )}
         />
-        <Route exact path="/checkout" component={() => <Checkout />} />
+        <Route
+          exact
+          path="/checkout"
+          component={() => <Checkout cart={cart} />}
+        />
         <Route component={NotFound} />
       </Switch>
       {/* <Products products={products} onAddToCart={handleAddToCart} /> */}
