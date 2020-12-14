@@ -32,7 +32,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error, refreshCart }) => {
           type: "cart",
         });
 
-        console.log(token);
+        // console.log(token);
 
         setCheckoutToken(token);
       } catch (error) {

@@ -1,5 +1,5 @@
 import { Button, Container, Grid, Typography } from "@material-ui/core";
-import React from "react";
+import React, { useEffect } from "react";
 import useStyles from "./styles";
 import CartItem from "./CartItem/CartItem";
 import { Link } from "react-router-dom";
@@ -11,6 +11,10 @@ const Cart = ({
   handleEmptyCart,
 }) => {
   //   const isEmpty = !cart.line_items.length;
+  useEffect(() => {
+    document.title = "Cart";
+  }, []);
+
   const classes = useStyles();
   const EmptyCart = () => (
     <Typography variant="subtitle1">
